@@ -3,10 +3,13 @@ import Head from "next/head";
 import React from "react";
 import Camps from "../components/Camps";
 import FAQ from "../components/FAQ";
+import SignUp from "../components/SignUp";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
-  const [content, setContent] = React.useState<"camps" | "faq">("camps");
+  const [content, setContent] = React.useState<"camps" | "faq" | "signup">(
+    "camps"
+  );
   return (
     <div
       style={{
@@ -48,15 +51,19 @@ const Home: NextPage = () => {
           >
             FAQ
           </button>
+          <button
+            className={`${styles.linkstylebutton} ${
+              content === "signup" && styles.selected
+            }`}
+            onClick={() => setContent("signup")}
+          >
+            Tickets
+          </button>
         </div>
-        {content === "camps" ? <Camps /> : <FAQ />}
+        {content === "camps" && <Camps />}
+        {content === "faq" && <FAQ />}
+        {content === "signup" && <SignUp />}
       </main>
-
-      <footer className={styles.footer}>
-        <span className={styles.highlight}>
-          Feel free to drop questions to stenius.mimmy@gmail.com!
-        </span>
-      </footer>
     </div>
   );
 };

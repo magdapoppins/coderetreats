@@ -1,4 +1,4 @@
-.faq {
+.info {
   margin: 1rem;
   padding: 1.5rem;
   text-align: center;
@@ -10,11 +10,11 @@
   line-height: 1.5;
 }
 
-.faq:hover {
+.info:hover {
   background-color: white;
   color: black;
 }
 
-.faq b {
-  font-size: 1.2rem;
+.info li {
+  text-align: left;
 }

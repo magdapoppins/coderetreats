@@ -10,7 +10,7 @@ const Camps: React.FC = () => {
       }}
     >
       <div className={styles.card}>
-        <h2>E-tekstiiliretriitti 17.-19.6.2022</h2>
+        <h2>E-tekstiiliretriitti 17.-19.6.2022 Paraisilla</h2>
         <p>
           Kesäkuussa koodausviikonloput saavat jatkoa ja tarjolla on
           e-tekstiilien parissa puuhastelua!
@@ -34,7 +34,7 @@ const Camps: React.FC = () => {
         <p>Viikonlopun hinta on 110e, johon sisältyy materiaalimaksu.</p>
       </div>
       <div className={styles.card}>
-        <h2>Python beginners retreat 9.-11.9.2022</h2>
+        <h2>Python beginners retreat 9.-11.9.2022 in Parainen</h2>
         <p>
           Finally it’s time to organize a Python retreat that was postponed by
           Covid last year!
