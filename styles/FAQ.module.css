@@ -1,0 +1,16 @@
+.faq {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  background-color: white;
+  color: black;
+  max-width: 1000px;
+  border-style: dashed;
+  border-radius: 10px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.faq b {
+  font-size: 1.2rem;
+}
