@@ -15,6 +15,7 @@ const Home: NextPage = () => {
       style={{
         backgroundImage: 'url("/background.jpg")',
         backgroundSize: "cover",
+        backgroundPosition: "center",
       }}
     >
       <Head>
@@ -28,13 +29,7 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <h1 className={styles.title}>Code Retreats 2022</h1>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            paddingBottom: "2rem",
-          }}
-        >
+        <div className={styles.buttons}>
           <button
             className={`${styles.linkstylebutton} ${
               content === "camps" && styles.selected

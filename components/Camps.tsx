@@ -2,13 +2,7 @@ import styles from "../styles/Camps.module.css";
 
 const Camps: React.FC = () => {
   return (
-    <div
-      style={{
-        display: "grid",
-        gridTemplateColumns: "1fr 1fr",
-        gridGap: "1rem",
-      }}
-    >
+    <div className={styles.grid}>
       <div className={styles.card}>
         <h2>E-tekstiiliretriitti 17.-19.6.2022 Paraisilla</h2>
         <p>

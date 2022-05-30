@@ -34,7 +34,6 @@
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
-  /* font-family: "Homemade Apple", cursive; */
 }
 
 .title,
@@ -55,26 +54,6 @@
   font-size: 1.1rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
 }
 
 .highlight {
@@ -102,4 +81,28 @@
 
 .selected {
   color: white;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 2rem;
+}
+
+@media (max-width: 500px) {
+  .buttons {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.5rem 0;
+  }
+  .linkstylebutton {
+    border: 2px dashed rgba(255, 255, 255, 0.5);
+    width: 80%;
+  }
+  .selected {
+    border: 2px solid white;
+  }
 }
